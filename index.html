@@ -123,6 +123,17 @@
             <a href="#" class="btn">✨ Начать</a>
             <a href="#" class="btn btn-outline">📖 Документация</a>
         </div>
+        <div class="posts">
+  <h2>Последние записи в дневнике</h2>
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <span>{{ post.date | date: "%d.%m.%Y" }}</span>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
         <footer>
             💡 Совет: замените ссылки и добавьте свои разделы, стили или JavaScript.
         </footer>
