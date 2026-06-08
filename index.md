@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Дневник"
+title: "Main"
 permalink: /
 ---
 
@@ -92,9 +92,9 @@ permalink: /
 
 <header>
   <p class="motto">
-    <span>Thinking.</span> &middot; 
-    <span>Waiting.</span> &middot; 
-    <span>Fasting.</span>
+    <span>Thinking</span> &middot; 
+    <span>Waiting</span> &middot; 
+    <span>Fasting</span>
   </p>
 </header>
 
