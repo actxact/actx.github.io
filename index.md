@@ -4,7 +4,6 @@ title: "think wait fast"
 ---
 
 ### Список:
-
 <ul>
   {% for post in site.posts %}
     <li>
@@ -13,3 +12,13 @@ title: "think wait fast"
     </li>
   {% endfor %}
 </ul>
+
+### Страницы:
+<ul>
+  {% for page in site.pages %}
+    {% if page.title and page.permalink != '/' %}
+      <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
