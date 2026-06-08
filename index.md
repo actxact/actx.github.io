@@ -91,12 +91,12 @@ permalink: /
 </style>
 
 <header>
-  <p class="motto">
-    <span>Thinking</span> &middot; 
-    <span>Waiting</span> &middot; 
-    <span>Fasting</span>
+  <p class="motto" style="font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.1em;">
+    Writing is good, thinking is better. <br>
+    Cleverness is good, patience is better.
   </p>
 </header>
+
 
 ## Хроника наблюдений
 
