@@ -1,1 +1,9 @@
+# базовые настройки Jekyll
+baseurl: ""  # если не подпапка
+url: "https://actxact.github.io"  # ваш адрес
+
+# обработка всех файлов с Front Matter
+include:
+  - "*.html"
+
 permalink: /:year/:month/:day/:title/
