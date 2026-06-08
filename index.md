@@ -92,7 +92,7 @@ permalink: /
 
 <header>
   <p class="motto" style="font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.1em;">
-    Writing is good, thinking is better. <br>
+    Writing is good, thinking is better. </br>
     Cleverness is good, patience is better.
   </p>
 </header>
