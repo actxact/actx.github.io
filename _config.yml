@@ -1,9 +1,11 @@
-# базовые настройки Jekyll
-baseurl: ""  # если не подпапка
-url: "https://actxact.github.io"  # ваш адрес
+# базовые настройки
+title: Мой дневник
+description: Личный дневник на GitHub Pages
+url: "https://actxact.github.io"
+baseurl: ""
 
-# обработка всех файлов с Front Matter
-include:
-  - "*.html"
-
+# красивые ссылки на статьи (без .html)
 permalink: /:year/:month/:day/:title/
+
+# обрабатываем Markdown
+markdown: kramdown
