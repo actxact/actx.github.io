@@ -1,0 +1,120 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'ru' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% seo %}
+  <style>
+    /* Наследование книжной атмосферы главной страницы */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Georgia, Garamond, serif;
+      line-height: 1.8;
+      color: #2c3e50;
+      background-color: #fcfcf9; /* Тот же мягкий бумажный оттенок */
+      max-width: 650px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    /* Метаданные статьи */
+    .post-meta {
+      font-family: monospace;
+      color: #95a5a6;
+      font-size: 0.9em;
+      margin-bottom: 5px;
+    }
+
+    h1.post-title {
+      font-weight: 400;
+      font-size: 2em;
+      line-height: 1.3;
+      margin-top: 0;
+      margin-bottom: 30px;
+      color: #34495e;
+    }
+
+    /* Оформление контента в духе аскетизма */
+    .post-content {
+      font-size: 1.05em;
+      text-align: justify;
+    }
+
+    .post-content p {
+      margin-bottom: 25px;
+    }
+
+    /* Выделенные цитаты — важные мысли */
+    .post-content blockquote {
+      margin: 30px 0;
+      padding-left: 20px;
+      border-left: 2px solid #c0392b; /* Брусничный акцент */
+      font-style: italic;
+      color: #555;
+    }
+
+    /* Элегантные ссылки внутри текста */
+    .post-content a {
+      color: #2980b9;
+      text-decoration: none;
+      border-bottom: 1px solid #2980b9;
+    }
+    .post-content a:hover {
+      color: #c0392b;
+      border-bottom-color: #c0392b;
+    }
+
+    /* Оформление блоков кода (благодаря Rouge из _config.yml) */
+    .highlight {
+      background: #f4f4f0 !important;
+      padding: 15px;
+      border-radius: 4px;
+      overflow-x: auto;
+      font-size: 0.9em;
+      margin: 25px 0;
+      border: 1px solid #eef;
+    }
+
+    /* Нижняя навигация */
+    footer {
+      margin-top: 60px;
+      border-top: 1px solid #eee;
+      padding-top: 20px;
+      font-size: 0.9em;
+    }
+
+    .back-link {
+      color: #7f8c8d;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .back-link:hover {
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+
+  <article itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <div class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {{ page.date | date: "%Y &middot; %m &middot; %d" }}
+        </time>
+      </div>
+      <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+      {{ content }}
+    </div>
+  </article>
+
+  <footer>
+    <a class="back-link" href="{{ '/' | relative_url }}">&larr; Вернуться к хронике</a>
+  </footer>
+
+</body>
+</html>
