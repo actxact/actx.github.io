@@ -1,11 +1,9 @@
 ---
 layout: default
-title: "Мой Дневник"
+title: "think wait fast"
 ---
 
-# Добро пожаловать в мой дневник!
-
-Здесь собраны все мои записи:
+### Список:
 
 <ul>
   {% for post in site.posts %}
